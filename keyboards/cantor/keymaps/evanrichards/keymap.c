@@ -20,7 +20,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       */
     [0] = LAYOUT_split_3x6_3(
         KC_NO,        KC_Q,       KC_W,         KC_F,        KC_P,        KC_B,            KC_J,        KC_L,        KC_U,        KC_Y,     KC_SCLN, KC_NO,
-        KC_NO, CTL_T(KC_A), SFT_T(KC_R), OPT_T(KC_S), CMD_T(KC_T), ALL_T(KC_G),     ALL_T(KC_M), CMD_T(KC_N), OPT_T(KC_E), SFT_T(KC_I), LT(2, KC_O), KC_NO,
+        KC_NO, CTL_T(KC_A),LSFT_T(KC_R), OPT_T(KC_S), CMD_T(KC_T), ALL_T(KC_G),     ALL_T(KC_M), CMD_T(KC_N), OPT_T(KC_E),RSFT_T(KC_I), LT(2, KC_O), KC_NO,
         KC_NO,        KC_Z,        KC_X,        KC_C,        KC_D,        KC_V,             KC_K,       KC_H,     KC_COMM,      KC_DOT,     KC_SLSH, KC_NO,
                                   KC_LEFT_CTRL, LT(1,KC_SPC), MT(MOD_LSFT, KC_TAB),   LT(4,KC_BACKSPACE), LT(3,KC_ENTER), KC_ESCAPE
     ),
@@ -46,10 +46,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [4] = LAYOUT_split_3x6_3(
-        KC_NO, KC_NO,      KC_NO, S(KC_LBRC), S(KC_RBRC), KC_NO,                   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO,
-        KC_NO, KC_NO,      KC_NO,    S(KC_9),    S(KC_0), KC_NO,                   KC_NO, KC_LCTL, KC_LSFT, KC_LALT, KC_LCMD, KC_NO,
-        KC_NO, KC_NO, S(KC_COMM),    KC_LBRC,    KC_RBRC, KC_NO,                   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO,
-                                                 KC_NO,   KC_NO,  KC_NO,    KC_NO, KC_NO,     KC_NO
+        KC_NO, KC_NO,      KC_NO, S(KC_LBRC), S(KC_RBRC),     KC_NO,                   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO,
+        KC_NO, KC_NO,      KC_NO,    S(KC_9),    S(KC_0),     KC_NO,                   KC_NO, KC_LCTL, KC_LSFT, KC_LALT, KC_LCMD, KC_NO,
+        KC_NO, KC_NO, S(KC_COMM),    KC_LBRC,    KC_RBRC, S(KC_DOT),                   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_NO,
+                                                  KC_NO,      KC_NO,  KC_NO,    KC_NO, KC_NO,     KC_NO
     )
 };
 
