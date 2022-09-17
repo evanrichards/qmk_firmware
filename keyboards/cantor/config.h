@@ -29,6 +29,9 @@
 #define BOOTMAGIC_LITE_ROW_RIGHT    4
 #define BOOTMAGIC_LITE_COLUMN_RIGHT 5
 
+#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
+#define IGNORE_MOD_TAP_INTERRUPT
+
 /*
  * Feature disable options
  *  These options are also useful to firmware size reduction.
