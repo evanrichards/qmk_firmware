@@ -37,22 +37,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       * ├───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼───┤
       * │ ^ │ וּ │ הּ │  │   │       │ - │ 4 │ 5 │ 6 │ ' │
       * ├───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼───┤
-      * │   │   │   │   │ ⏻ │       │ + │ 1 │ 2 │ 3 │ / │
+      * │   │   │   │   │ ⏻ │       │ + │ 1 │ 2 │ 3 │   │
       * └───┴───┴───┴───┴───┘       └───┴───┴───┴───┴───┘
       *           ┌───┐                   ┌───┐
-      *           │CTL├───┐           ┌───┤ 0 │
-      *           └───┤  ├───┐   ┌───┤ ⏎ ├───┘
-      *               └───┤TAB│   │  ├───┘
+      *           │   ├───┐           ┌───┤ 0 │
+      *           └───┤  ├───┐   ┌───┤   ├───┘
+      *               └───┤   │   │   ├───┘
       *                   └───┘   └───┘
       * Ideas -
-      *   Repeated / in this and layer 0, remove it.
-      *   Clean up thumb clusters.
       */
     [1] = LAYOUT_split_3x6_3(
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                         KC_GRAVE,  KC_7,  KC_8,  KC_9, KC_BSLS, KC_NO,
-        KC_NO, KC_LCTL, KC_LSFT, KC_LALT, KC_LCMD,   KC_NO,                          KC_MINS,  KC_4,  KC_5,  KC_6, KC_QUOT, KC_NO,
-        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, QK_BOOT,                        S(KC_EQL),  KC_1,  KC_2,  KC_3, KC_SLSH, KC_NO,
-                                     KC_LEFT_CTRL,  KC_SPC, KC_TAB,   KC_BACKSPACE, KC_ENTER,  KC_0
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                    KC_GRAVE,  KC_7,  KC_8,  KC_9, KC_BSLS, KC_NO,
+        KC_NO, KC_LCTL, KC_LSFT, KC_LALT, KC_LCMD,   KC_NO,                     KC_MINS,  KC_4,  KC_5,  KC_6, KC_QUOT, KC_NO,
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, QK_BOOT,                   S(KC_EQL),  KC_1,  KC_2,  KC_3,   KC_NO, KC_NO,
+                                              KC_NO,  KC_NO,  KC_NO,    KC_NO,  KC_NO,  KC_0
+
     ),
      /*
       * Layer 2 -  Navigation
