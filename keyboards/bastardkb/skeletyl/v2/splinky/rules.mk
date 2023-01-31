@@ -32,3 +32,4 @@ LAYOUTS = split_3x5_3
 
 SERIAL_DRIVER = vendor
 WS2812_DRIVER = vendor
+CAPS_WORD_ENABLE = yes
